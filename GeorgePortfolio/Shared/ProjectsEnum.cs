@@ -2,7 +2,7 @@
 {
     public enum ProjectsEnum
     {
-        NatigaEmt7an = 1 , NewsApp, MarketDotNet , MediaCenterDotNet , DealsEgDotNet,
+        SmartErp = 1, NatigaEmt7an , NewsApp, MarketDotNet , MediaCenterDotNet , DealsEgDotNet,
         Obscura , Paint , SecurityPackage , WinXp, MatricesBuilder,
         GamesWebsite , PyramidsOpengl
     }

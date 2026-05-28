@@ -1,0 +1,367 @@
+﻿@inherits ProjectsContent
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP – Modern Enterprise Resource Planning System.
+        </h2>
+
+        <div>
+            🚀 <strong>Project Overview</strong>
+        </div>
+
+        <div class="ms-2">
+            SmartERP is a modern full-stack ERP system designed for small and medium businesses.<br />
+            It provides a complete solution for managing business operations in a clean, fast, and scalable way.<br /><br />
+
+            The system helps companies manage:<br />
+            • Inventory<br />
+            • Sales<br />
+            • Purchases<br />
+            • Customers<br />
+            • Suppliers<br />
+            • Employees<br />
+            • Financial transactions<br />
+            • Reports and dashboards<br />
+            • Roles and permissions<br /><br />
+
+            The system focuses heavily on:<br />
+            • Clean Architecture<br />
+            • Maintainable and scalable code<br />
+            • High performance<br />
+            • Real-world business logic<br />
+            • Excellent UI/UX experience<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – Tech Stack</h2>
+
+        <div>
+            ⚙️ <strong>Frontend</strong>
+        </div>
+
+        <div class="ms-2">
+            React + TypeScript<br />
+            React Router<br />
+            Redux Toolkit / Context API<br />
+            Tailwind CSS<br />
+            Shadcn/UI Components<br />
+            React Hook Form + Zod Validation<br />
+            Axios (API handling)<br />
+            Recharts (Analytics dashboards)<br />
+            Framer Motion (Animations)<br />
+        </div>
+
+        <br />
+
+        <div>
+            🧠 <strong>Backend</strong>
+        </div>
+
+        <div class="ms-2">
+            ASP.NET Core Web API (.NET 8)<br />
+            Clean Architecture<br />
+            CQRS + MediatR<br />
+            Entity Framework Core<br />
+            SQL Server<br />
+            FluentValidation<br />
+            JWT Authentication + Refresh Tokens<br />
+            Serilog Logging<br />
+            AutoMapper<br />
+            Repository + Unit of Work Pattern<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – Architecture Overview</h2>
+
+        <div>
+            🏗️ <strong>Backend Layers</strong>
+        </div>
+
+        <div class="ms-2">
+
+            <strong>1. Domain Layer</strong><br />
+            • Entities<br />
+            • Value Objects<br />
+            • Enums<br />
+            • Domain Events<br />
+            • Interfaces<br />
+            → No external dependencies<br /><br />
+
+            <strong>2. Application Layer</strong><br />
+            • CQRS Commands & Queries<br />
+            • DTOs<br />
+            • Validators (FluentValidation)<br />
+            • MediatR Handlers<br />
+            • Business Rules<br />
+            → Organized by Features (Products, Sales, Inventory)<br /><br />
+
+            <strong>3. Infrastructure Layer</strong><br />
+            • EF Core Configuration<br />
+            • Repositories<br />
+            • Authentication Services<br />
+            • Logging (Serilog)<br />
+            • Email / File Services<br /><br />
+
+            <strong>4. Presentation Layer</strong><br />
+            • ASP.NET Core Controllers<br />
+            • Thin controllers only<br />
+            • All logic handled via MediatR<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – Core Modules</h2>
+
+        <div class="ms-2">
+            <strong>Authentication & Authorization</strong><br />
+            • JWT Authentication<br />
+            • Refresh Tokens<br />
+            • Role & Permission System<br />
+            • Admin / Manager / Accountant / Cashier / Warehouse roles<br /><br />
+
+            <strong>Dashboard</strong><br />
+            • Revenue analytics<br />
+            • Sales charts<br />
+            • Low stock alerts<br />
+            • Top products<br />
+            • Recent invoices<br /><br />
+
+            <strong>Product & Inventory</strong><br />
+            • Product CRUD<br />
+            • Categories<br />
+            • Stock tracking<br />
+            • Automatic stock updates<br />
+            • Prevent negative stock<br /><br />
+
+            <strong>Sales Module</strong><br />
+            • Invoice creation<br />
+            • Discounts & taxes<br />
+            • PDF export<br />
+            • Stock validation<br /><br />
+
+            <strong>Purchases</strong><br />
+            • Supplier invoices<br />
+            • Stock increase automation<br /><br />
+
+            <strong>Financial Module</strong><br />
+            • Expenses & revenue tracking<br />
+            • Cash transactions<br />
+            • Daily reports<br /><br />
+
+            <strong>Reports</strong><br />
+            • Sales reports<br />
+            • Profit analysis<br />
+            • Inventory reports<br />
+            • Exportable filters<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – UI/UX Vision</h2>
+
+        <div class="ms-2">
+            The system is designed to feel like a modern SaaS product similar to Stripe, Notion, and Odoo.<br /><br />
+
+            UI principles:<br />
+            • Minimal and clean design<br />
+            • Fast navigation (2–3 clicks max per action)<br />
+            • Responsive layout (mobile + desktop)<br />
+            • Dark / Light mode support<br />
+            • Smooth animations (Framer Motion)<br />
+            • Modern dashboards with charts<br />
+            • Clear typography and spacing<br />
+            • Empty states + loading skeletons<br /><br />
+
+            UX goals:<br />
+            • Simple for non-technical users<br />
+            • Fast invoice creation<br />
+            • Easy search (products/customers)<br />
+            • No clutter or complexity<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – Engineering & Performance</h2>
+
+        <div class="ms-2">
+            • Clean Architecture (strict separation of concerns)<br />
+            • CQRS with MediatR for scalability<br />
+            • FluentValidation for request validation<br />
+            • Serilog for logging errors and actions<br />
+            • Global exception handling middleware<br />
+            • Pagination, filtering, sorting everywhere<br />
+            • AsNoTracking for read performance<br />
+            • Proper indexing on SQL Server<br />
+            • Soft delete strategy for safe data handling<br /><br />
+
+            Security:<br />
+            • JWT Authentication<br />
+            • Role-based + Permission-based access<br />
+            • Secure password hashing<br />
+            • Refresh token rotation<br /><br />
+
+            Performance:<br />
+            • Optimized EF Core queries<br />
+            • Avoid unnecessary loading<br />
+            • Efficient database structure<br />
+        </div>
+    </div>
+</div>
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>SmartERP – Final Vision</h2>
+
+        <div class="ms-2">
+            The final result is a production-ready ERP SaaS system that looks and behaves like a real commercial product.<br /><br />
+
+            It demonstrates:<br />
+            • Senior-level backend architecture<br />
+            • Modern frontend engineering<br />
+            • Real business workflows<br />
+            • Scalable database design<br />
+            • Secure authentication system<br />
+            • Professional UI/UX experience<br /><br />
+
+            The goal is to deliver a system that can actually be used by real companies in production environments.
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/01.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/02.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/03.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/04.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/05.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/06.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            SmartERP Project – Modern Enterprise Resource Planning System.
+        </h2>
+        <center>
+            <img src="projects/SmartErp/07.png" />
+        </center>
+    </div>
+</div>
