@@ -59,6 +59,9 @@
                 case ProjectsEnum.SmartErp:
                 <SmartErp SendCount="ReceiveCount" Idx="Idx" />
                 break;
+                case ProjectsEnum.Veylog:
+                <Veylog SendCount="ReceiveCount" Idx="Idx" />
+                break;
             }
         </div>
         <button disabled="@(this.Count == null || this.Count.Value - 1 == Idx)" @onclick="() => Next()" class="move-btn fa fa-arrow-right"></button>

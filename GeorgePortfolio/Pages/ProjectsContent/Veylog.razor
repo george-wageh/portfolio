@@ -1,0 +1,284 @@
+@inherits ProjectsContent
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            Veylog – Comprehensive Logging & Monitoring Library for ASP.NET Core
+        </h2>
+
+        <div>
+            🚀 <strong>Project Overview</strong>
+        </div>
+
+        <div class="ms-2">
+            Veylog is a comprehensive logging and monitoring library for ASP.NET Core applications.<br />
+            It provides detailed API and SQL query logging with performance metrics, authentication for the logging interface, database integration, and an interactive dashboard.<br /><br />
+
+            <strong>Key Highlights:</strong><br />
+            • Automatically logs all incoming HTTP requests and responses<br />
+            • Intercepts and logs all SQL queries executed by Entity Framework Core<br />
+            • Token-based authentication for the logging dashboard<br />
+            • Real-time dashboard updates without manual refresh<br />
+            • Async background logging with batching for minimal performance impact<br />
+            • Supports .NET 7, 8, 9, and 10<br />
+            • Published as a NuGet package for easy integration<br />
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Core Features</h2>
+
+        <div>
+            📡 <strong>API Logging</strong>
+        </div>
+        <div class="ms-2">
+            • Automatically logs all incoming HTTP requests and responses<br />
+            • Records request method, URL, headers, and query parameters<br />
+            • Captures response status codes and content<br />
+            • Tracks request duration for performance analysis<br />
+            • Stores user information (if authenticated) and IP address<br />
+            • Supports request/response body logging<br />
+        </div>
+
+        <br />
+
+        <div>
+            🗄️ <strong>SQL Query Logging</strong>
+        </div>
+        <div class="ms-2">
+            • Intercepts and logs all SQL queries via EF Core interceptor<br />
+            • Records query execution time with millisecond precision<br />
+            • Supports Reader, NonQuery, and Scalar operations<br />
+            • Logs query parameters for debugging<br />
+            • Captures SQL errors and exceptions<br />
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Authentication & Security</h2>
+
+        <div>
+            🔐 <strong>Authentication & Security</strong>
+        </div>
+        <div class="ms-2">
+            • Token-based authentication for the logging dashboard<br />
+            • Secure cookie-based session with 8-hour expiration<br />
+            • Automatic token generation and validation<br />
+            • Sensitive data masking (passwords, tokens, cards, authorization headers)<br />
+            • Protected dashboard route at <code>/veylog/login</code><br />
+            • Veylog routes are excluded from logging to avoid recursion<br />
+        </div>
+
+        <br />
+
+        <div>
+            📊 <strong>Performance Monitoring</strong>
+        </div>
+        <div class="ms-2">
+            • Tracks query execution time<br />
+            • Calculates summary statistics (min, max, average)<br />
+            • Builds daily, monthly, and yearly statistics<br />
+            • Monitors slow queries for performance optimization<br />
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Interactive Dashboard</h2>
+
+        <div>
+            🖥️ <strong>Dashboard Features</strong>
+        </div>
+        <div class="ms-2">
+            <strong>API Logs View</strong> – Detailed view of all HTTP requests with filtering capabilities<br /><br />
+            <strong>SQL Logs View</strong> – View and analyze SQL queries with parameters<br /><br />
+            <strong>Statistics Page</strong> – Visual representations of API and SQL performance<br /><br />
+            <strong>Filtering Options:</strong><br />
+            • Date range (from/to)<br />
+            • API path filter<br />
+            • HTTP method filter (GET, POST, PUT, DELETE, etc.)<br />
+            • Status code filter (200, 404, 500, etc.)<br />
+            • Request/Response body search<br />
+            • General search across multiple fields<br /><br />
+            <strong>Real-Time Updates:</strong><br />
+            • Dashboard updates in real time as new logs arrive<br />
+            • Popup notifications when new logs are received<br />
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Tech Stack & Architecture</h2>
+
+        <div>
+            ⚙️ <strong>Technology Stack</strong>
+        </div>
+        <div class="ms-2">
+            • ASP.NET Core (.NET 7 / 8 / 9 / 10)<br />
+            • Entity Framework Core with SQL Server<br />
+            • Async background logging with batching<br />
+            • Configurable flush interval and batch size<br />
+            • Automatic database migration on startup<br />
+            • Non-blocking logging queue<br />
+        </div>
+
+        <br />
+
+        <div>
+            📦 <strong>Installation</strong>
+        </div>
+        <div class="ms-2">
+            <code>dotnet add package Veylog --version 1.0.5</code><br /><br />
+            Simply configure in <code>Program.cs</code>, add the middleware with <code>app.UseVeylog()</code>,<br />
+            and the library handles migrations, logging, and dashboard automatically.<br />
+        </div>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Configuration & Customization</h2>
+
+        <div>
+            🔧 <strong>Configuration Options</strong>
+        </div>
+        <div class="ms-2">
+            • Toggle API logging on/off<br />
+            • Toggle SQL logging on/off<br />
+            • Configure request/response body logging<br />
+            • Enable SQL parameter logging<br />
+            • Customize flush interval (default 30s) and batch size (default 200)<br />
+            • Set expiration time for authentication tokens<br />
+            • Custom User ID Claim support for non-standard claim setups<br />
+            • <code>OnError</code> callback for handling failed requests<br />
+        </div>
+
+        <br />
+
+        <div>
+            🛡️ <strong>Privacy & Security</strong>
+        </div>
+        <div class="ms-2">
+            • Automatic masking of sensitive fields: password, confirmPassword, token, accessToken,<br />
+              refreshToken, authorization, cardNumber, cvv<br />
+            • All replaced with <code>***MASKED***</code><br />
+            • Secure cookie-based authentication<br />
+            • Session timeout configurable (default 8 hours)<br />
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            Veylog – Comprehensive Logging & Monitoring Library for ASP.NET Core
+        </h2>
+        <center>
+            <img src="projects/veylog/01.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            Veylog – Comprehensive Logging & Monitoring Library for ASP.NET Core
+        </h2>
+        <center>
+            <img src="projects/veylog/02.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            Veylog – Comprehensive Logging & Monitoring Library for ASP.NET Core
+        </h2>
+        <center>
+            <img src="projects/veylog/03.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>
+            Veylog – Comprehensive Logging & Monitoring Library for ASP.NET Core
+        </h2>
+        <center>
+            <img src="projects/veylog/04.png" />
+        </center>
+    </div>
+</div>
+
+<div class="content @(Idx == idxCounter ? "contentActive" : "")">
+    @{
+        idxCounter++;
+    }
+    <div>
+        <h2>Veylog – Project Links</h2>
+
+        <div class="ms-2">
+            <br />
+            <center>
+                <h4>🔗 GitHub Repository</h4>
+                <p>
+                    <a href="https://github.com/george-wageh/Veylog" target="_blank" style="color: #209bfc; font-size: 18px;">
+                        github.com/george-wageh/Veylog
+                    </a>
+                </p>
+                <br />
+                <h4>📦 NuGet Package</h4>
+                <p>
+                    <a href="https://www.nuget.org/packages/Veylog" target="_blank" style="color: #209bfc; font-size: 18px;">
+                        nuget.org/packages/Veylog
+                    </a>
+                </p>
+                <br />
+                <p style="color: #ccc;">
+                    License: MIT<br />
+                    Version: 1.0.5
+                </p>
+            </center>
+        </div>
+    </div>
+</div>

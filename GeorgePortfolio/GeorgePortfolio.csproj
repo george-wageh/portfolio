@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\projects\GamesWebsite\" />
+    <Folder Include="wwwroot\projects\Veylog\" />
   </ItemGroup>
 
 </Project>
